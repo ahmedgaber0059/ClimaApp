@@ -48,6 +48,7 @@ struct WeatherManger {
                     
                     //we add self cause closure
                     if let weather = self.parseJSNO(weatherData: safeData){
+			    self.delegate?.didUpdateWeather(weather: weather)
                         
                     }
                 }
