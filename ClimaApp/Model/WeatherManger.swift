@@ -70,8 +70,7 @@ struct WeatherManger {
             let name = decodedData.name
             
             let weather = WeatherModel (condtionId: id, cityName: name, temperature: temp)
-            
-            self.delegate?.didUpdateWeather(weather: weather)
+   
             return weather
         }
         catch {
